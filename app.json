@@ -1,7 +1,8 @@
 {
   "expo": {
     "name": "HARISON_CI_CD",
-    "slug": "harison-ci-cd",
+    "slug": "harisoncicd",
+    "owner": "harisonrios",
     "version": "1.0.0",
     "scheme": "harisoncicd",
     "orientation": "portrait",

@@ -16,7 +16,7 @@ jobs:
         run: npm ci
       - name: Rodar testes unitarios (Jest)
         id: run_tests
-        run: npm test
+        run: npm test -- --ci
 
   build_android:
     name: Gerar Build Android (Preview APK)
