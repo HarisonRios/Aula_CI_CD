@@ -1,0 +1,27 @@
+name: CI/CD Pipeline - Aula Mobile
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+
+jobs:
+  test:
+    name: Executar Testes Automatizados
+    steps:
+      - uses: eas/checkout
+      - name: Instalar dependencias
+        id: install_deps
+        run: npm ci
+      - name: Rodar testes unitarios (Jest)
+        id: run_tests
+        run: npm test
+
+  build_android:
+    name: Gerar Build Android (Preview APK)
+    needs: ['test']
+    type: build
+    params:
+      platform: android
+      profile: preview
