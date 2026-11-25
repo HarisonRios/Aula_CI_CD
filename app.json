@@ -4,28 +4,29 @@
     "slug": "harisoncicd",
     "owner": "harisonrios",
     "version": "1.0.0",
-    "scheme": "harisoncicd",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.harisonrios.aulacicd"
+      "bundleIdentifier": "com.harisonrios.harisoncicd"
     },
     "android": {
-      "package": "com.harisonrios.aulacicd",
+      "package": "com.harisonrios.harisoncicd",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      "expo-router"
-    ]
+    }
   }
 }
